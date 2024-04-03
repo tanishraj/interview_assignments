@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Task Manager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet"/> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-app="todoApp" ng-controller="todoController">
+	<div class="main-agile">
+		<h1>Task Manager Widget</h1>
+		<div class="content">
+			<div class="top-grids">
+				<div class="top-grids-left">
+					<div class="signin-form task-grid">	
+						<h3>Task Form</h3>
+						<form name="taskForm" class="w3_form_post" novalidate="">
+							<input type="text" ng-class="{'has-error':taskForm.task.$invalid && !taskForm.task.$pristine, 'has-success':taskForm.task.$valid}" ng-keydown="performOnEnter()" name="task" ng-model="task" placeholder="Enter your task" required="" >
+							<input ng-click="submitTask()" type="button" value="Add Task">
+						</form>
+					</div>
+				</div>
+				<div class="top-grids-right">
+					<div class="signin-form task-grid">	
+						<h3>Today's Task List</h3>
+						<ol>
+							<li ng-repeat="task in tasks track by $index">
+								<label class="control control--checkbox ">
+ 									<input type="checkbox" ng-model="task.status" ng-click="updateStatus(task.taskMessage, task.status)"/>
+  									<div class="control__indicator" ></div>
+    							</label>
+								<span contenteditable="false" class="done-{{task.status}}" ng-keyup="updateTask(task.taskMessage)" ng-blur="editTask(task.taskMessage)" ng-dblclick="editTask(task.taskMessage)" ng-model="task.taskMessage">
+    								{{task.taskMessage}}
+								</span>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: NeuzeitGro800;
+  src: url("../fonts/English/NeuzeitGro-Bla.woff") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: NeuzeitGro700;
+  src: url("../fonts/English/NeuzeitGro-Bol.woff") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: NeuzeitGro300;
+  src: url("../fonts/English/NeuzeitGro-Lig.woff") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: NeuzeitGro;
+  src: url("../fonts/English/NeuzeitGro-Reg.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SSTArabic;
+  src: url("../fonts/Arabic/SSTArabic-Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: SSTArabic;
+  src: url("../fonts/Arabic/SSTArabic-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: SSTArabic;
+  src: url("../fonts/Arabic/SSTArabic-Medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: SSTArabic;
+  src: url("../fonts/Arabic/SSTArabic-Roman.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

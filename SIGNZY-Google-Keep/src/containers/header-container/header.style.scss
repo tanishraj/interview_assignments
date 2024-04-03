@@ -1,0 +1,14 @@
+.header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #202124;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spacer {
+    height: 68px;
+}

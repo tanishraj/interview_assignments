@@ -1,0 +1,16 @@
+<a href="#" class="btn btn-primary mb-3" (click)="goBack()">Back to Product List</a>
+<div class="card">
+	<div class="card-header">
+	  <img src="{{productDes.itemImage}}" alt="{{productDes.itemName}}"/>
+	</div>
+	<div class="card-body">
+	  <h5 class="card-title">{{productDes.itemName}}</h5>
+	  <p class="card-text">
+		  <strong class="d-block">{{productDes.bidAmount}}</strong>
+		  <br/> Description: <br/>{{productDes.itemDescription}} <br/>
+		  <br/>
+		<small class="d-block text-success">{{productDes.startTime}}</small>
+		<small class="d-block text-danger">{{productDes.endTime}}</small>
+	  </p>
+	</div>
+  </div>
