@@ -191,7 +191,7 @@ table {
 body {
   font-family: var(--roboto);
   font-size: var(--font-sm);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 img {
@@ -253,6 +253,7 @@ a {
   background: var(--bg-purple);
   position: relative;
   margin-bottom: 70px;
+  overflow-x: clip;
 }
 
 .hero-container {
@@ -922,6 +923,12 @@ a.more.link.chevron {
 }
 
 @media only screen and (max-width: 640px) {
+  .hero-container,
+  .service-container,
+  .offers-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .breadcrumb img {
     display: block;
     position: relative;
@@ -949,5 +956,46 @@ a.more.link.chevron {
 
   .checkbox:checked + .navigation-container {
     display: block;
+  }
+
+  .banner-container .button-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-container {
+    flex-direction: column;
+  }
+
+  .carousel-list {
+    overflow: scroll;
+    justify-content: flex-start;
+  }
+
+  .webinar-container {
+    overflow: scroll;
+  }
+
+  .small-card-container {
+    flex-direction: row;
+  }
+
+  .image-card {
+    width: 75%;
+  }
+
+  .image-card.column {
+    flex-direction: column;
+  }
+
+  .image-card.column img {
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0;
   }
 }
