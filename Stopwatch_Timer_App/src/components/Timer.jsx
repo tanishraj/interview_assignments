@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-const SECONDS = 5;
+const SECONDS = 180;
 
 export const Timer = () => {
   const [second, setSecond] = useState(SECONDS);
@@ -40,22 +40,20 @@ export const Timer = () => {
     <div>
       <h1>TIMER APP</h1>
 
-      {isStarted.toString()}
-
       <div className="timer-container">
         <h2
           className="stopwatch"
-          style={{ color: isStarted ? 'green' : 'red' }}
+          style={{ color: isStarted ? "green" : "red" }}
         >
           <span>
             {Math.floor(second / 60) < 10
-              ? '0' + Math.floor(second / 60)
+              ? "0" + Math.floor(second / 60)
               : Math.floor(second / 60)}
           </span>
           :
           <span>
             {Math.floor(second % 60) < 10
-              ? '0' + Math.floor(second % 60)
+              ? "0" + Math.floor(second % 60)
               : Math.floor(second % 60)}
           </span>
         </h2>
