@@ -1,9 +1,9 @@
-import React from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import React from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
 
-import App from '../App';
-import ProtectedRoute from '../components/ProtectedRoute';
-import Users from '../components/Users.js';
+import App from "../App";
+import ProtectedRoute from "../components/ProtectedRoute";
+import Users from "../components/Users.js";
 
 const Router = () => {
   return (

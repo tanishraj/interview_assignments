@@ -1,7 +1,7 @@
-import Logo from './components/Logo';
-import FormControls from './components/FormControls';
+import Logo from "./components/Logo";
+import FormControls from "./components/FormControls";
 
-import './styles.scss';
+import "./App.scss";
 
 const App = () => {
   return (
