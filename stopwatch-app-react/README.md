@@ -1,65 +1,58 @@
-# Stopwatch App with React
+# Stopwatch App Screenshot
 
-![Stopwatch](./src/assets/app_screenshot.png "Optional Title")
+![Stopwatch App](./src/assets/stopwatch.png "Stopwatch App")
 
-# Vite React Starter
+# Stopwatch React App
 
-This is a starter project for building React applications using Vite as the build tool.
+This is a React project for creating a stopwatch application.
 
 ## Prerequisites
 
-- Node.js (>=14.x)
+- Node.js (>=12.x)
 - npm or yarn
 
 ## Getting Started
 
 1. Clone the repository or download the source code.
-2. Navigate to the project directory: `cd vite-react-starter`
+2. Navigate to the project directory: `cd stopwatch-app-react`
 3. Install dependencies: `npm install` or `yarn install`
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm run dev` or `yarn dev`
+### `npm start` or `yarn start`
 
 Runs the app in development mode.\
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### `npm test` or `yarn test`
+
+Launches the test runner in interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
 ### `npm run build` or `yarn build`
 
-Builds the app for production to the `dist` folder.\
+Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified, and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-### `npm run lint` or `yarn lint`
-
-Runs ESLint for all JavaScript and JSX files in the project, reporting any lint errors or warnings found.
-
-### `npm run preview` or `yarn preview`
-
-Serves the production build locally for previewing.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Dependencies
 
-- React (^18.3.1)
-- React DOM (^18.3.1)
-
-## Development Dependencies
-
-- @types/react (^18.3.1)
-- @types/react-dom (^18.3.0)
-- @vitejs/plugin-react (^4.2.1)
-- ESLint (^8.57.0)
-- eslint-plugin-react (^7.34.1)
-- eslint-plugin-react-hooks (^4.6.2)
-- eslint-plugin-react-refresh (^0.4.6)
-- Vite (^5.2.10)
+- @testing-library/jest-dom (^4.2.4)
+- @testing-library/react (^9.5.0)
+- @testing-library/user-event (^7.2.1)
+- node-sass (^9.0.0)
+- react (^16.13.1)
+- react-dom (^16.13.1)
+- react-scripts (^5.0.1)
 
 ## License
 
