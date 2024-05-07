@@ -1,6 +1,6 @@
 # App Screenshot
 
-![Color Box Interaction](./src/assets/color-box-interaction.mov "Color Box Interaction")
+![Color Box Interaction](./src/assets/color-box-interaction.gif "Color Box Interaction")
 
 # Color Box Interaction (React)
 
