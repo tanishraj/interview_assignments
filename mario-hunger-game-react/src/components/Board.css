@@ -24,7 +24,8 @@
 }
 
 .mario {
-  background: #bbb;
+  background: url("../assets/mario.png") center no-repeat;
+  background-size: 50% 50%;
 }
 
 .steps {
