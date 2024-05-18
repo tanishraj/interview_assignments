@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector, useDispatch } from "react-redux";
+import "./App.css";
+import { useEffect } from "react";
 
 function App() {
+  const { user } = useSelector((state) => {
+    return state.users;
+  });
+
+  console.log(user);
+
+  const dispatch = useDispatch();
+
+  const fetchUserById = (userId) => {
+    dispatch({ type: "GET_USER_BY_ID", payload: userId });
+  };
+
+  useEffect(() => {
+    fetchUserById();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>@reduxjs/toolkit + Redux Saga</h1>
+
+      <div className="user-container">
+        <ul>
+          {user.data.map((user) => (
+            <li
+              key={user.id}
+              onClick={() => fetchUserById(user.id)}
+              className="user"
+            >
+              {user.firstname}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
