@@ -1,13 +1,12 @@
 import { useSelector, useDispatch } from "react-redux";
 import "./App.css";
 import { useEffect } from "react";
+import { Todo } from "./components/Todo/Todo";
 
 function App() {
   const { user } = useSelector((state) => {
     return state.users;
   });
-
-  console.log(user);
 
   const dispatch = useDispatch();
 
@@ -22,20 +21,17 @@ function App() {
   return (
     <div className="App">
       <h1>@reduxjs/toolkit + Redux Saga</h1>
+      <Todo />
 
-      <div className="user-container">
+      {/* <div className="user-container">
         <ul>
           {user.data.map((user) => (
-            <li
-              key={user.id}
-              onClick={() => fetchUserById(user.id)}
-              className="user"
-            >
+            <li key={user.id} className="user">
               {user.firstname}
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }
