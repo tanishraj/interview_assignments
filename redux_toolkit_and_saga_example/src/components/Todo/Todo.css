@@ -1,0 +1,26 @@
+.container {
+  background: #fff;
+  padding: 2rem;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  background: #eee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 0.5rem;
+}
