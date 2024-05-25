@@ -25,6 +25,20 @@ const todoSlice = createSlice({
       state.todo.errors = action.payload;
     },
 
+    addTodoRequest: (state, action) => {
+      console.log("ACTION PAYLOAD", action.payload);
+      state.todo.loading = true;
+      state.todo.error = null;
+    },
+    addTodoSuccessAction: (state, action) => {
+      state.todo.loading = false;
+      state.todo.data.unshift(action.payload);
+    },
+    addTodoFailureAction: (state, action) => {
+      state.todo.loading = false;
+      state.todo.error = action.payload;
+    },
+
     deleteTodoRequest: (state, _action) => {
       state.todo.loading = true;
       state.todo.error = null;
@@ -45,6 +59,9 @@ export const {
   fetchTodo,
   fetchTodosSuccessAction,
   fetchTodosFailureAction,
+  addTodoRequest,
+  addTodoSuccessAction,
+  addTodoFailureAction,
   deleteTodoRequest,
   deleteTodoSuccessAction,
   deleteTodoFailureAction
